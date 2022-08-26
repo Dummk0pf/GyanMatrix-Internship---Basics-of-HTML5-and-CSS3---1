@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIV tags</title>
+    <meta name="description" content="describing div tags">
+    <style>
+        
+        .box1{                                  /*classes must begin with dot*/
+            background-color:blue;
+            color:black;                      /*ordering of the selectors does not matter*/
+            font-size:20px;                     /*only the ordering in the html file matters*/
+            text-decoration:dashed;
+            width:600px;
+            height:400px;
+        }
+
+        
+        div{
+            background-color: aqua;
+            width:700px;
+        }
+
+
+        .box2{
+            background-color:purple;
+            color:brown;
+            font-size:20px;
+            text-decoration:dotted;
+            width:400px;
+            height: 250px;
+        }
+
+        .hightlight-text{
+            text-decoration: dotted;
+            color:black;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">                      <!--here the div also has a style as well as a class then the class overwrites the div style-->
+        <p>First box</p>
+    </div>
+    <div class="box2">
+        <p class="hightlight-text">Second box</p>
+    </div>
+</body>
+</html>
